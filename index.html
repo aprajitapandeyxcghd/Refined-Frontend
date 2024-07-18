@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>LP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="mobile.png" alt="logo">
+        </div>
+        <div class="step">
+            <h2>Step 1/2</h2>
+        </div>
+        <div class="rectangular-bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Rest of your content -->
+        <figure class="image-container">
+            <img src="mobile.png" alt="centered image">
+            <figcaption class="caption">Enter your phone number</figcaption>
+        </figure>
+        <div class="shake-box">
+            <label for="mobile-number">Mobile Number:</label>
+            <div class="phone-input">
+                <span class="country-code">+964</span>
+                <input type="tel" id="mobile-number" name="mobile-number" placeholder="12345678">
+            </div>
+        </div>
+        <div class="continue-box">
+            <a href="#" class="continue-button">Continue</a>
+        </div>
+        <div class="disclaimer">
+            <p>Entertainment is a subscription service that will automatically</p>
+            <p>renew for 1 USD/ 7 Day(s). You can unsubscribe from the service</p>
+            <p>at anytime, by sending STOP to **** for (operator) . To make use</p>
+            <p>of this service, you must be 18 or more unless you have received</p>
+            <p>permission from your parents or the person who is authorized to</p>
+            <p>pay your bill.</p>
+        </div>
+        <div class="terms-link">
+            <a href="#" id="termsLink" style="color: grey; text-decoration: underline; font-size: 12px;">Terms &amp; Conditions</a>
+        </div>
+        <div class="privacy-link">
+            <a href="#" id="privacyLink" style="color: grey; text-decoration: underline; font-size: 12px;">Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Paste Terms and Conditions content here -->
+            <iframe id="termsFrame" src="https://click.afflink.mobi/TermsAndConditions?id=1236&amp;country=Unknown&amp;langcode=en"></iframe>
+        </div>
+    </div>
+
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Paste Privacy Policy content here -->
+            <iframe id="privacyFrame" src="https://click.afflink.mobi/PrivacyPolicy?id=1236&amp;country=Unknown&amp;langcode=en"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
